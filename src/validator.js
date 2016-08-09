@@ -16,6 +16,7 @@ export class Validator {
     rules = rules.rules;
     for (let i = 0, ii = rules.length; i < ii; i++) {
       const ruleInfo = rules[i];
+      propertyName = propertyName || ruleInfo.key;
       if (propertyName !== null && ruleInfo.key !== propertyName) {
         continue;
       }
