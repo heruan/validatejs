@@ -14,10 +14,11 @@ export class Validator {
       return errors;
     }
     rules = rules.rules;
+    let nullPropertyName = propertyName === null;
     for (let i = 0, ii = rules.length; i < ii; i++) {
       const ruleInfo = rules[i];
-      propertyName = propertyName || ruleInfo.key;
-      if (propertyName !== null && ruleInfo.key !== propertyName) {
+      propertyName = nullPropertyName ? ruleInfo.key : propertyName;
+      if (!nullPropertyName && ruleInfo.key !== propertyName) {
         continue;
       }
       const { name, config } = ruleInfo.rule;
