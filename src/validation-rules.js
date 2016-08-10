@@ -1,6 +1,6 @@
 import {metadata} from 'aurelia-metadata';
+import {metadataKey} from 'aurelia-validation';
 import {ValidationRule} from './validation-rule';
-import {metadataKey} from './metadata-key';
 
 export class ValidationRules {
   rules = [];

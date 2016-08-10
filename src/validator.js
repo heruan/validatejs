@@ -1,6 +1,5 @@
 import {metadata} from 'aurelia-metadata';
-import {ValidationError} from 'aurelia-validation';
-import {metadataKey} from './metadata-key';
+import {ValidationError, metadataKey} from 'aurelia-validation';
 import validate from 'validate.js';
 
 export class Validator {

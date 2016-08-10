@@ -1,6 +1,6 @@
 import {metadata} from 'aurelia-metadata';
+import {metadataKey} from 'aurelia-validation';
 import {ValidationRules} from './validation-rules';
-import {metadataKey} from './metadata-key';
 
 export function base(targetOrConfig, key, descriptor, rule) {
   if (key) {
